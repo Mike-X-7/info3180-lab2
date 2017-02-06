@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="main">
+    <h1><strong>Profile</strong></h1>
+      <div>
+          <img src="{{ url_for('static', filename = 'image/Lionel-Messi.jpg')}}" alt = "A pic of Messi" >
+      </div>
+
+       <div id="info">
+        <h4><strong>Lionel Andrés Messi</strong></h4><hr>
+        <p>{{ time }}</p><hr>
+        <p><b>Username:</b> MikeX</p>
+        <p><b>ID:</b> 620076685</p>
+        <p><b>Sex:</b> Male</p>
+        <p><b>Age:</b> 29</p>
+        <p><b>Sport:</b> Football</p>
+        <p><b>Position:</b> Forward</p>
+        </div>
+</div>
+   
+
+{% endblock %}
